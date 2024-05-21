@@ -1,0 +1,73 @@
+/* Reset some basic elements for cross-browser compatibility */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fullscreen setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.grid {
+    position: relative;
+    width: 560px;
+    height: 300px;
+    background: #333;
+    border: 5px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Score Display */
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Styling for blocks */
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(45deg, #ff6f61, #de5833);
+    border: 2px solid #ff4b2b;
+    border-radius: 5px;
+}
+
+/* Styling for user paddle */
+.user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(to top, #00c6ff, #0072ff);
+    border: 2px solid #005bb5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for ball */
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ffdd00, #ff8800);
+    border-radius: 50%;
+    border: 2px solid #ffaa00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
